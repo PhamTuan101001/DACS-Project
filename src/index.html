@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="page1.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <button>hahaha</button>
+  <div class="all">
+    <div class="header">
+      <h2>sàn dao dịch</h2>
+      <ul>
+        <li><button class="btnlogin">Đăng nhập</button></li>
+        <li><button class="btnsignin">Đăng ký</button></li>
+      </ul>
+    </div>
+    <div class="modal_login login">
+        <div class="wapper">
+            <div class="wapper-heading">
+              <h1>Login</h1>
+            </div>
+            <form>
+              <div class="input__field">
+                <input id="username" type="text" placeholder="User Name" />
+              </div>
+              <div class="input__field">
+                <input id="password" type="password" placeholder="Password" />
+              </div>
+              <button class="btn btn-login">Đăng nhập</button>
+            </form>
+          </div>
+    </div>
+    <div class="modal_signin signin">
+        <div class="wapper">
+            <div class="wapper-heading">
+              <h1>Đăng ký</h1>
+            </div>
+            <form>
+              <div class="input__field">
+                <input id="username" type="text" placeholder="User Name" />
+              </div>
+      
+              <div class="input__field">
+                <input id="email" type="text" placeholder="Email" />
+              </div>
+              <div class="input__field">
+                <input id="password" type="password" placeholder="Password" />
+              </div>
+              <div class="input__field">
+                <input id="password" type="password" placeholder="xác nhận Password" />
+              </div>
+              <button class="btn btn-signup">Đăng ký</button>
+            </form>
+          </div>
+    </div>
+  </div>
 </body>
+<script src="index.js"></script>
 </html>
