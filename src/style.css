@@ -15,6 +15,7 @@ a {
     color: #000;
 }
 
+
 .sub-menu {
     position: absolute;
     width: 150px;
@@ -43,7 +44,6 @@ a {
     font-size: 12px !important;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -55,15 +55,18 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.5);
+    background: #f26526;
+    opacity: 0.7;
 }
 
 header.sticky {
-    background: rgba(255, 255, 255, 1.0);
+    background: #f26526;
+    opacity: 1.0;
 }
 
 header:hover {
-    background: rgba(255, 255, 255, 1.0);
+    background: #f26526;
+    opacity: 1.0;
 }
 
 .logo {
@@ -129,6 +132,7 @@ button {
     padding-bottom: 30px;
     /* border-bottom: 2px solid #000; */
     overflow: hidden;
+    background: #f26526;
 
 }
 
@@ -176,6 +180,7 @@ button {
     margin: 0 auto;
     border-bottom: 2px solid #000;
     border-top: 2px solid #000;
+    /* background: #f26526; */
 }
 
 .fashion h3 {
@@ -224,7 +229,8 @@ button {
     height: 30px;
     display: block;
     text-transform: uppercase;
-    background-color: rgba(22, 58, 218, 0.7);
+    background-color: #223671;
+    opacity: 0.7;
     text-align: center;
     padding: 6px 0;
     font-weight: 600;
@@ -240,6 +246,12 @@ button {
     bottom: 0;
     overflow: visible;
     transition: 0.3s ease-in-out;
+}
+
+.buy-now:hover {
+    background-color: #223671;
+    opacity: 1.0;
+
 }
 
 .product-info {
@@ -259,10 +271,6 @@ button {
     padding: 2px 5px;
 }
 
-.buy-now:hover {
-    background-color: rgba(22, 58, 218, 1.0);
-
-}
 
 /*------------------------------- message------------------------------------- */
 #toast {
@@ -349,6 +357,7 @@ button {
 /* -------------------------------footer-------------------------- */
 footer {
     text-align: center;
+    /* background: #f26526; */
 }
 
 .footer-top {
