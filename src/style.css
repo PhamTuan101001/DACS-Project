@@ -128,6 +128,114 @@ button {
     cursor: pointer;
 }
 
+.user {
+    position: relative;
+
+}
+
+.user .Login {
+    position: absolute;
+    background: #223671;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    top: 45px;
+
+
+}
+
+/* .user:hover .login {
+    display: flex;
+
+} */
+
+
+
+.Login,
+.btnlogin,
+.btnsignin {
+    font-size: 12px;
+    font-weight: bold !important;
+    line-height: 20px;
+    color: #fff;
+}
+
+.modal_signin {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal_login {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.wapper {
+    width: 300px;
+    position: relative;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    padding: 10px 30px 30px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.wapper input {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    height: 45px;
+    width: 100%;
+    border: 1px solid #0093ab;
+    outline: none;
+    border-radius: 10px;
+}
+
+.wapper .btn {
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: blue;
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.wapper input:focus {
+    border: 1px solid #F26526;
+}
+
+.wapper input::placeholder {
+    color: black;
+}
+
+.wapper .signup_btn {
+    display: block;
+    transform: translateX(120px);
+    margin-bottom: 20px;
+    color: #F26526;
+}
+
+/* .signin {
+    display: none;
+} */
+
+/* .login {
+    display: none;
+} */
+
 #Slider {
     padding-bottom: 30px;
     /* border-bottom: 2px solid #000; */
@@ -212,7 +320,7 @@ button {
 .products li img {
     max-width: 100%;
     height: auto;
-    border: 2px solid rgb(234, 233, 233);
+    border: 2px solid #223671;
 
 }
 
