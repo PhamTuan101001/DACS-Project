@@ -8,10 +8,11 @@ userBtn.addEventListener("click", () => {
       `;
   const btnLogin = document.querySelector(".btnLogin");
   const btnSignin = document.querySelector(".btnSignin");
-  const modal_login = document.querySelector(".modal_login");
-  const modal_signin = document.querySelector(".modal_signin");
+  const display_login = document.querySelector(".display_login");
+  const display_signin = document.querySelector(".display_signin");
   btnLogin.addEventListener("click", () => {
-    modal_login.innerHTML = `
+    display_login.innerHTML = `
+    <div class="modal_login login">
       <div class="wapper">
         <div class="wapper-heading">
           <h1>Login</h1>
@@ -29,10 +30,13 @@ userBtn.addEventListener("click", () => {
           </p>
         </form>
       </div>
+    </div>
       `;
 
     btnSignin.addEventListener("click", () => {
-      modal_signin.innerHTML = `
+      display_login.removeChild(display_login);
+      display_signin.innerHTML = `
+      <div class="modal_signin signin">
         <div class="wapper">
           <div class="wapper-heading">
             <h1>Đăng ký</h1>
@@ -58,6 +62,7 @@ userBtn.addEventListener("click", () => {
             <button type="button" class="btn btn-signup">Đăng ký</button>
           </form>
         </div>
+      </div>
         `;
     });
   });
