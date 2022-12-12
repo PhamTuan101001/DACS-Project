@@ -1,3 +1,20 @@
+.all .closelog,
+.all .clossig{
+    padding: 5px 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+}
+button{
+    cursor: pointer;
+}
+.all .closelog:hover,
+.all .clossig:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
 .modal_signin{
     position:fixed;
     top: 0;
@@ -31,6 +48,7 @@
     outline: none;
     border-radius: 10px;
   }
+  .wapper form p button,
   .wapper .btn {
     padding: 8px 15px;
     border: none;
