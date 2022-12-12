@@ -36,6 +36,21 @@ function ready(){
     var button = addcart[i];
     button.addEventListener("click", addcartclicked);
   }
+  //buy btn
+  document.getElementsByClassName("btn-buy")[0].addEventListener("click",buybuttonclicked);
+}
+function buybuttonclicked(){
+  var itemsl = document.getElementsByClassName("cart-box")
+  if(itemsl.length <= 0 ){
+    alert("không còn dản phẩm trong giỏ hàng")
+  }else {
+  alert("dat hang thanh cong")
+  var cartcontent = document.getElementsByClassName("cart-content")[0];
+  while (cartcontent.hasChildNodes()){
+    cartcontent.removeChild(cartcontent.firstChild);
+  }
+  updatetotal();
+}
 }
 
 //
@@ -68,19 +83,20 @@ function addproducttocart(title, price,producimg){
   cartshopbox.classList.add("cart-box");
   var cartitems = document.getElementsByClassName("cart-content")[0]
   var cartitemsnames = cartitems.getElementsByClassName("cart-product-title")
+  var cartitemsprices = cartitems.getElementsByClassName("cart-price")
   for(var i=0;i<cartitemsnames.length;i++){
-    if(cartitemsnames[i].innerText == title){
-      alert(" them thanh cong");
+    if(cartitemsnames[i].innerText == title || cartitemsprices[i].innerText == price){
+      alert("Đã có sản phẩm trong giỏ hàng");
       return;
     }
   }
 
 
 var cartboxcontent = `
-  <img class="cart-img" src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+  <img class="cart-img" src="${producimg}" alt="">
   <div class="detail-box">
-    <div class="cart-product-title"> earbuds</div>
-    <div class="cart-price">$25</div>
+    <div class="cart-product-title">${title}</div>
+    <div class="cart-price">${price}</div>
     <input type="number" value="1" class="cart-quantity">
   </div>
   <!--remove cart-->
@@ -90,7 +106,6 @@ cartshopbox.innerHTML = cartboxcontent;
 cartitems.append(cartshopbox)
 cartshopbox.getElementsByClassName('cart-remove')[0].addEventListener('click',removecartitem)
 cartshopbox.getElementsByClassName('cart-quantity')[0].addEventListener('click',quantitychanged)
-
 }
 //updeta total
 
@@ -105,9 +120,10 @@ function updatetotal(){
     var quantityelement = cartbox.getElementsByClassName('cart-quantity')[0]
     var quantity = quantityelement.value
     total = total + price * quantity;
+  }
     //
     total = Math.round(total*100)/100;
     document.getElementsByClassName('total-price')[0].innerText = "$" + total;
-  }
+  
 }
 })
