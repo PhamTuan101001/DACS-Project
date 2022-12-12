@@ -188,6 +188,40 @@
     color: #000;
     cursor: pointer;
   }
+  /* end cart */
+
+  /* chi tiet */
+
+  header .detail{
+    font-size: 19px;
+    position: fixed;
+    top: -100%;
+    width: 500px;
+    min-height: 50vh;
+    padding: 20px;
+    background: #fff;
+    transition: 0.3s;
+    border: 1px green solid;
+    opacity: 0;
+  }
+  header .detail .detail-img{
+    width: 100px;
+  }
+  
+  header .detail.active{
+    opacity: 100;
+    top: 50px;
+  }
+  #close-detail{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  /* end chi tiet */
   #input {
     height: 30px;
     width: 300px;
