@@ -2,7 +2,7 @@ getapishop().then(data =>{
 let caricon = document.querySelector(".cart-icon");
 let cart = document.querySelector(".cart");
 let closecart = document.querySelector("#close-cart");
-
+let detaill = document.querySelector(".detail");
 //open cart
 caricon.addEventListener("click", () => {
     cart.classList.add("active");
@@ -126,4 +126,8 @@ function updatetotal(){
     document.getElementsByClassName('total-price')[0].innerText = "$" + total;
   
 }
+let a = document.querySelector('header')
+a.addEventListener("click", () => {
+  detaill.classList.remove("active");
+});
 })
