@@ -101,6 +101,8 @@
     top: 0;
     right: -100%;
     width: 360px;
+    height: 100vh;
+    overflow-x:hidden;
     min-height: 100vh;
     padding: 20px;
     background: #fff;
@@ -130,6 +132,7 @@
     object-fit: contain;
     padding: 10px;
   }
+  .history-detail-box,
   .detail-box{
     display: grid;
     row-gap: 0.5rem;
@@ -180,6 +183,15 @@
   .btn-buy:hover{
     background: #000;
   }
+  .btn-history{
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    font-size: 1rem;
+    color: #000;
+    cursor: pointer;
+  }
+  #close-history,
   #close-cart{
     position: absolute;
     top: 1rem;
@@ -187,6 +199,50 @@
     font-size: 2rem;
     color: #000;
     cursor: pointer;
+  }
+  /* them lich su mua hang */
+  header .cartfon .history{
+    position: fixed;
+    top: -100%;
+    right: 360px;
+    width: 360px;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
+    background: #fff;
+    box-shadow: -2px 0 4px ;
+    transition: 0.3s;
+    overflow-x:hidden;
+   
+  }
+  header .cartfon .history.active{
+    top:0;
+  }
+  .history-img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    padding: 5px;
+  }
+  .history-box{
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .total-history{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid #000;
+  }
+  .total-title-history{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .total-price-history{
+    margin-left: 0.5rem;
   }
   /* end cart */
 
