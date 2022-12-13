@@ -2,6 +2,7 @@ getapishop().then(data =>{
     var detailbtn = document.getElementsByClassName("btndetail")
     let detail = document.querySelector(".detail");
 
+
   if(document.readyState == 'loading'){
   document.addEventListener('DOMContentLoaded',addditaill)
 } else{

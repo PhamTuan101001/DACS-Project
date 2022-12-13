@@ -72,7 +72,7 @@
         <div class="cart"> 
           <h2 class="cart-title">your cart</h2>
           <div class="cart-content">
-           
+          
           </div>
           <!--total-->
           <div class="total">
@@ -82,9 +82,20 @@
           <!--buy btn-->
           <button type="button" class="btn-buy">Thanh toán</button>
           <!--close icon-->
+          <button type="button" class="btn-history">lịch sử mua hàng</button>
           <i class="clossig fa-solid fa-xmark" id="close-cart"></i>
         </div>
+
+        <div class="history">
+          <h2 class="history-title">Lịch sử mua hàng</h2>
+          <i class="clossig fa-solid fa-xmark" id="close-history"></i>
+          <div class="history-content">
+           
+          </div>
+        </div>
+
       </div>
+
       <div class="detail">
         <h2>Chi tiết</h2>
         <i class="clossig fa-solid fa-xmark" id="close-detail" ></i>
@@ -111,11 +122,8 @@
   
         </div>
         <div class="option">
-          <select>
-            <option>Xắp xếp</option>
-            <option class="price-ascending">giá tăng dần</option>
-            <option class="price-decrease">giá giảm dần</option>
-            </select>
+          <button class="price-ascending">tang dan</button>
+          <button class="price-decrease">giam dan</button>
         </div>
         <div id="section2" class="section2">
           <div class="container">
@@ -365,6 +373,7 @@
     <script src="app.js"></script>
     <script src="cart.js"></script>
     <script src="detail.js"></script>
+    <script src="sort.js"></script>
     <script> 
     //giao dien dang nhap dk
       var closlog = document.querySelector(".wapper .wapper-heading .closelog")
