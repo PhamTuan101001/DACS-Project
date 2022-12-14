@@ -152,8 +152,8 @@ header .cartfon .cart-icon {
   cursor: pointer;
   position: relative;
   color: aliceblue;
-  margin: 4px 10px;
-  font-size: 24px;
+  margin: 22px 30px;
+  font-size: 16px;
   transform: translateY(-25%)
 }
 
@@ -262,15 +262,16 @@ header .cartfon .cart.active {
   position: absolute;
   top: 2px;
   left: 1px;
-  font-size: 2rem;
-  color: #F26526;
+  font-size: 1.2rem;
+  color: #fff;
   cursor: pointer;
-  border: none;
-  background-color: #fff;
+  background-color: #223671;
+  border: #fff;
+  border-radius: 3px;
 }
 
 .btn-history:hover {
-  color: #223671;
+  color: #F26526;
 }
 
 #close-history,
