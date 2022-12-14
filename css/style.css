@@ -152,8 +152,8 @@ header .cartfon .cart-icon {
   cursor: pointer;
   position: relative;
   color: aliceblue;
-  margin: 22px 30px;
-  font-size: 16px;
+  margin: auto 24px;
+  font-size: 18px;
   transform: translateY(-25%)
 }
 
@@ -247,7 +247,7 @@ header .cartfon .cart.active {
   margin: 1.5rem auto 0 auto;
   padding: 12px 20px;
   border: none;
-  background: red;
+  background: #F26526;
   color: white;
   font-size: 1rem;
   font-weight: 500;
@@ -255,23 +255,23 @@ header .cartfon .cart.active {
 }
 
 .btn-buy:hover {
-  background: #000;
+  background: #223671;
 }
 
 .btn-history {
   position: absolute;
-  top: 2px;
-  left: 1px;
-  font-size: 1.2rem;
+  top: 4px;
+  left: 4px;
+  font-size: 1.5rem;
   color: #fff;
   cursor: pointer;
-  background-color: #223671;
-  border: #fff;
-  border-radius: 3px;
+  background-color: #F26526;
+  border-radius: 5px;
+  padding: 2px;
 }
 
 .btn-history:hover {
-  color: #F26526;
+  background-color: #223671;
 }
 
 #close-history,
@@ -482,9 +482,7 @@ header a ion-icon {
 
 }
 
-.section {
-  background: #223671;
-}
+
 
 .section1 {
   width: 1080px;
@@ -510,13 +508,13 @@ header a ion-icon {
   width: 200px;
   height: 300px;
   background-color: white;
-  border: 2.5px solid black;
+  border: 2.5px solid #223671;
   border-radius: 12px;
 }
 
 .section2 .container .items .name {
   text-align: center;
-  background-color: rgb(240, 197, 6);
+  background-color: #F26526;
   height: 25px;
   padding-top: 4px;
   color: white;
@@ -576,6 +574,10 @@ header a ion-icon {
   opacity: 100;
 }
 
+.section2 .container .items:hover {
+  border: 2px solid #F26526;
+}
+
 .section2 .container .items:hover .img img {
   transform: scale(1.2);
   transition-duration: 0.8s;
@@ -587,6 +589,8 @@ header a ion-icon {
 }
 
 .option-price {
+  padding-top: 10px;
+  font-size: 16px;
   color: #F26526;
   line-height: 1.5;
   border: none;
@@ -861,7 +865,7 @@ footer {
   .section1 {
     width: 80%;
     overflow: hidden;
-
+    background-color: #223671;
     justify-content: center;
     align-items: center;
     margin: 0px auto;
