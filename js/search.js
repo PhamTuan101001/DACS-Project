@@ -6,7 +6,6 @@ btnsearch.addEventListener("click", () => {
     if(opensearch.value == ''){
       searchbox.classList.remove("active");
       removesearch()
-      return;
     }else{
       removesearch()
       searchtitle();
@@ -16,7 +15,7 @@ btnsearch.addEventListener("click", () => {
 opensearch.addEventListener("click", () => {
     searchbox.classList.add("active");
   });
-function searchtitle(){
+function searchtitle(){//so sanh
         var valuesearch = document.querySelector(".search-input").value;
         var nameitems = document.getElementsByClassName('items');
         for(var i=0;i<nameitems.length;i++){
@@ -27,7 +26,7 @@ function searchtitle(){
             }
         }
 }
-function addsearch(imgsearch,namesearch){
+function addsearch(imgsearch,namesearch){//add hàng vào ô tim kiem
   
     var searchbox = document.createElement("div");
     searchbox.classList.add("search-box");
@@ -39,7 +38,7 @@ function addsearch(imgsearch,namesearch){
     searchtitems.append(searchbox)
 }
 
-function removesearch(){
+function removesearch(){//xóa hàng trong ô tìm kiếm
   var searchcontent = document.getElementsByClassName("search-content")[0];
   while (searchcontent.hasChildNodes()){
     searchcontent.removeChild(searchcontent.firstChild);
