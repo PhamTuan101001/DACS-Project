@@ -247,7 +247,7 @@ header .cartfon .cart.active {
   margin: 1.5rem auto 0 auto;
   padding: 12px 20px;
   border: none;
-  background: red;
+  background: #F26526;
   color: white;
   font-size: 1rem;
   font-weight: 500;
@@ -255,22 +255,23 @@ header .cartfon .cart.active {
 }
 
 .btn-buy:hover {
-  background: #000;
+  background: #223671;
 }
 
 .btn-history {
   position: absolute;
-  top: 2px;
-  left: 1px;
-  font-size: 2rem;
-  color: #F26526;
+  top: 4px;
+  left: 4px;
+  font-size: 1.5rem;
+  color: #fff;
   cursor: pointer;
-  border: none;
-  background-color: #fff;
+  background-color: #F26526;
+  border-radius: 5px;
+  padding: 2px;
 }
 
 .btn-history:hover {
-  color: #223671;
+  background-color: #223671;
 }
 
 #close-history,
@@ -481,9 +482,7 @@ header a ion-icon {
 
 }
 
-.section {
-  background: #223671;
-}
+
 
 .section1 {
   width: 1080px;
@@ -515,7 +514,7 @@ header a ion-icon {
 
 .section2 .container .items .name {
   text-align: center;
-  background-color: rgb(240, 197, 6);
+  background-color: #F26526;
   height: 25px;
   padding-top: 4px;
   color: white;
@@ -586,6 +585,8 @@ header a ion-icon {
 }
 
 .option-price {
+  padding-top: 10px;
+  font-size: 16px;
   color: #F26526;
   line-height: 1.5;
   border: none;
@@ -860,7 +861,7 @@ footer {
   .section1 {
     width: 80%;
     overflow: hidden;
-
+    background-color: #223671;
     justify-content: center;
     align-items: center;
     margin: 0px auto;
