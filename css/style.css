@@ -103,9 +103,8 @@
   .search-content{
     position: fixed;
     top: -100%;
-    
     width: 300px;
-    height: 100vh;
+    height: 50vh;
     overflow-x:hidden;
     min-height: 100vh;
     background: #fff;
@@ -578,6 +577,9 @@
   @media screen and (max-width: 1250px) {
     .items {
       transform: scale(0.9);
+    }
+    .search-content.active{
+      top: 100px;
     }
     .img-slider img {
       height: 60vw;
