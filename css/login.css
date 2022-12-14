@@ -1,80 +1,97 @@
 .all .closelog,
-.all .clossig{
-    padding: 5px 10px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 20px;
+.all .clossig {
+  padding: 5px 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
 }
-button{
-    cursor: pointer;
+
+.btnlogin,
+.btnsigin {
+  cursor: pointer;
+  border: none;
+  background: inherit;
+
 }
+
 .all .closelog:hover,
-.all .clossig:hover{
-    background-color: red;
-    color: white;
-    cursor: pointer;
+.all .clossig:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
 }
-.modal_signin{
-    position:fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+
+.modal_signin {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
-.modal_login{
-    position:fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+
+.modal_login {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
+
 .wapper {
-    width: 300px;
-    position: relative;
-    background-color: #fff;
-    top: 50%;
-    left: 50%;
-    padding: 10px 30px 30px;
-    border-radius: 10px;
-    transform: translate(-50%,-50%);
-  }
-  .wapper input {
-    padding-left: 10px;
-    margin-bottom: 10px;
-    height: 45px;
-    width: 100%;
-    border: 1px solid #0093ab;
-    outline: none;
-    border-radius: 10px;
-  }
-  .wapper form p button,
-  .wapper .btn {
-    padding: 8px 15px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    background: blue;
-    transition: all 0.2s linear;
-  }
-  .btn:hover {
-    transform: scale(1.1);
-  }
-  .wapper input:focus {
-    border: 1px solid #F26526;
-  }
-  .wapper input::placeholder {
-    color: black;
-  }
-  .wapper .signup_btn {
-    display: block;
-    transform: translateX(120px);
-    margin-bottom: 20px;
-    color: #F26526;
-  }
-  .signin {
-    display: none;
-  }
-  .login{
-    display: none;
-  }
+  width: 300px;
+  position: relative;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  padding: 10px 30px 30px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.wapper input {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  height: 45px;
+  width: 100%;
+  border: 1px solid #0093ab;
+  outline: none;
+  border-radius: 10px;
+}
+
+.wapper form p button,
+.wapper .btn {
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: blue;
+  transition: all 0.2s linear;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.wapper input:focus {
+  border: 1px solid #F26526;
+}
+
+.wapper input::placeholder {
+  color: black;
+}
+
+.wapper .signup_btn {
+  display: block;
+  transform: translateX(120px);
+  margin-bottom: 20px;
+  color: #F26526;
+}
+
+.signin {
+  display: none;
+}
+
+.login {
+  display: none;
+}

@@ -52,7 +52,7 @@
   </div>
 </div>
   <!--end dang nhap-->
-    <header>
+    <header class= header>
       <div class="logo"><a href="#">CWR Shop</a></div>
       <div class="search">
         <input class="search-input" type="text" placeholder="search products" id="input">
@@ -67,8 +67,8 @@
           <li><a href="#" class="under">HOME</a></li>
           <li><a href="#section2" class="under">SHOP</a></li>
           <li><a href="#footer" class="under">CONTACT US</a></li>
-          <li><button class="btnlogin">Đăng nhập</button></li>
-          <li><button class="btnsignin">Đăng ký</button></li>
+          <li><a class="btnlogin under">LOGIN</a></li>
+          <li><a class="btnsignin under">SIGN IN</a></li>
         </ul>
       </div>
       <div class="cartfon">
@@ -84,14 +84,14 @@
             <div class="total-price">0$</div>
           </div>
           <!--buy btn-->
-          <button type="button" class="btn-buy">Thanh toán</button>
+          <button type="button" class="btn-buy">PAY</button>
           <!--close icon-->
-          <button type="button" class="btn-history">lịch sử mua hàng</button>
+          <button type="button" class="btn-history">purchase history</button>
           <i class="clossig fa-solid fa-xmark" id="close-cart"></i>
         </div>
 
         <div class="history">
-          <h2 class="history-title">Lịch sử mua hàng</h2>
+          <h2 class="history-title">purchase history</h2>
           <i class="clossig fa-solid fa-xmark" id="close-history"></i>
           <div class="history-content">
            
@@ -101,7 +101,7 @@
       </div>
 
       <div class="detail">
-        <h2>Chi tiết</h2>
+        <h2>detail</h2>
         <i class="clossig fa-solid fa-xmark" id="close-detail" ></i>
         <img class="detail-img" src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
         <ul>
@@ -113,7 +113,7 @@
         </ul>
       </div>
     </header>
-    <section>
+    <section class="section_product">
       <div class="section">
         <div class="section1">
           <div class="img-slider">
@@ -125,9 +125,9 @@
           </div>
   
         </div>
-        <div class="option">
-          <button class="price-ascending">tang dan</button>
-          <button class="price-decrease">giam dan</button>
+        <div class="option"> <strong class="option-price">PRICE :</strong>
+          <button class="price-ascending option-price">Augment</button>
+          <button class="price-decrease option-price">Abatement</button>
         </div>
         <div id="section2" class="section2">
           <div class="container">
@@ -147,8 +147,8 @@
               <div class="price">$6.34</div>
               <div class="info">Lorem ipsum dolor sit.</div>
               <div class="btnpay">
-                <button class="btnbuy">buy now</button>
-                <button class="btnaddcar">add cart</button>
+                <button class="btnbuy btnpay-color">buy now</button>
+                <button class="btnaddcar btnpay-color">add cart</button>
               </div>
             </div>
             <div class="items">
@@ -317,11 +317,11 @@
       </div>
   
     </section>
-    <footer>
-      <div id="footer" class="footer0">
+    <footer class="footer">
+      <div id="footer" class="footer0 footer-text">
         <h1>CODEWITHRANDOM</h1>
       </div>
-      <div class="footer1 ">
+      <div class="footer1 footer-text ">
         Connect with us at<div class="social-media">
           <a href="#">
             <ion-icon name="logo-facebook"></ion-icon>
@@ -340,7 +340,7 @@
           </a>
         </div>
       </div>
-      <div class="footer2">
+      <div class="footer2 footer-text">
         <div class="product">
           <div class="heading">Products</div>
           <div class="div">Sell your Products</div>
@@ -371,7 +371,7 @@
           <div class="div">Login</div>
         </div>
       </div>
-      <div class="footer3">Copyright © <h4>ShoPperZ</h4> 2021-2028</div>
+      <div class="footer3 footer-text">Copyright © <h4>ShoPperZ</h4> 2021-2028</div>
     </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="./js/app.js"></script>
