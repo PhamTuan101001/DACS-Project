@@ -508,7 +508,7 @@ header a ion-icon {
   width: 200px;
   height: 300px;
   background-color: white;
-  border: 2.5px solid black;
+  border: 2.5px solid #223671;
   border-radius: 12px;
 }
 
@@ -573,7 +573,9 @@ header a ion-icon {
   visibility: visible;
   opacity: 100;
 }
-
+.section2 .container .items:hover{
+  border:2px solid #F26526;
+}
 .section2 .container .items:hover .img img {
   transform: scale(1.2);
   transition-duration: 0.8s;
