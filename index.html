@@ -1,4 +1,10 @@
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CWR shop</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -50,21 +56,21 @@
           </form>
         </div>
   </div>
-</div>
+  </div>
   <!--end dang nhap-->
     <header class= header>
-      <div class="logo"><a href="#">CWR Shop</a></div>
+      <div class="logo home" onclick="getHone()"><a  href="#">CWR Shop</a></div>
       <div class="search">
         <input class="search-input" type="text" placeholder="search products" id="input">
         <ion-icon class="s" name="search"></ion-icon>
         <div class="search-content">
         
       </div>
-
+  
       </div>
       <div class="heading">
         <ul>
-          <li><a href="#" class="under">HOME</a></li>
+          <li><a href="#" class="under home" onclick="getHone()">HOME</a></li>
           <li><a href="#section2" class="under">SHOP</a></li>
           <li><a href="#footer" class="under">CONTACT US</a></li>
           <li><a class="btnlogin under">LOGIN</a></li>
@@ -89,7 +95,7 @@
           <button type="button" class="btn-history">purchase history</button>
           <i class="clossig fa-solid fa-xmark" id="close-cart"></i>
         </div>
-
+  
         <div class="history">
           <h2 class="history-title">purchase history</h2>
           <i class="clossig fa-solid fa-xmark" id="close-history"></i>
@@ -97,9 +103,9 @@
            
           </div>
         </div>
-
+  
       </div>
-
+  
       <div class="detail">
         <h2>detail</h2>
         <i class="clossig fa-solid fa-xmark" id="close-detail" ></i>
@@ -132,190 +138,237 @@
         <div id="section2" class="section2">
           <div class="container">
             <div class="items">
-              <div class="img img1"><img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+              <!-- <div class="img img1"><img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
               <div class="name">SHOES</div>
               <div class="price">$5</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img2"><img src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+              <!-- <div class="img img2"><img src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
               <div class="name">MEN's T-SHIRT</div>
               <div class="price">$6.34</div>
               <div class="info">Lorem ipsum dolor sit.</div>
               <div class="btnpay">
                 <button class="btnbuy btnpay-color">buy now</button>
                 <button class="btnaddcar btnpay-color">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img3"><img src="https://media.istockphoto.com/photos/folded-blue-jeans-on-a-white-background-modern-casual-clothing-flat-picture-id1281304280" alt=""></div>
+              <!-- <div class="img img3"><img src="https://media.istockphoto.com/photos/folded-blue-jeans-on-a-white-background-modern-casual-clothing-flat-picture-id1281304280" alt=""></div>
               <div class="name">JEANS</div>
               <div class="price">$9</div>
               <div class="info">Lorem ipsum dolor sit amet.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img4"><img src="https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+              <!-- <div class="img img4"><img src="https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
               <div class="name">WATCH</div>
               <div class="price">$9.1</div>
               <div class="info">Lorem ipsum dolor sit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img5"><img src="https://images.pexels.com/photos/6858618/pexels-photo-6858618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+              <!-- <div class="img img5"><img src="https://images.pexels.com/photos/6858618/pexels-photo-6858618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
               <div class="name">SMART PHONE</div>
               <div class="price">$20</div>
               <div class="info">Lorem ipsum dolor sit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img6"><img src="https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+              <!-- <div class="img img6"><img src="https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
               <div class="name">TELEVISION</div>
               <div class="price">$18</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img7"><img src="https://images.pexels.com/photos/4295985/pexels-photo-4295985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+              <!-- <div class="img img7"><img src="https://images.pexels.com/photos/4295985/pexels-photo-4295985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
               <div class="name">HOODIES</div>
               <div class="price">$6.7</div>
               <div class="info">Lorem ipsum dolor sit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img8"><img src="https://media.istockphoto.com/photos/vintage-plates-with-silver-teaspoons-picture-id184363070" alt=""></div>
+              <!-- <div class="img img8"><img src="https://media.istockphoto.com/photos/vintage-plates-with-silver-teaspoons-picture-id184363070" alt=""></div>
               <div class="name">DINNER SET</div>
               <div class="price">$10</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img9"><img src="https://images.pexels.com/photos/6463348/pexels-photo-6463348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+              <!-- <div class="img img9"><img src="https://images.pexels.com/photos/6463348/pexels-photo-6463348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
               <div class="name">BLANKETS</div>
               <div class="price">$9.9</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img10"><img src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+              <!-- <div class="img img10"><img src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
               <div class="name">LAPTOP</div>
               <div class="price">$99</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img11"><img src="https://media.istockphoto.com/photos/modern-kitchen-microwave-oven-picture-id1144960519" alt=""></div>
+              <!-- <div class="img img11"><img src="https://media.istockphoto.com/photos/modern-kitchen-microwave-oven-picture-id1144960519" alt=""></div>
               <div class="name">MICROWAVE</div>
               <div class="price">$30</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img12"><img src="https://media.istockphoto.com/photos/black-coffee-maker-with-green-led-lights-picture-id177395430" alt=""></div>
+              <!-- <div class="img img12"><img src="https://media.istockphoto.com/photos/black-coffee-maker-with-green-led-lights-picture-id177395430" alt=""></div>
               <div class="name">COFFEE MAKER</div>
               <div class="price">$29.7</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img13"><img src="https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+              <!-- <div class="img img13"><img src="https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
               <div class="name">BED</div>
               <div class="price">$100</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img14"><img src="https://media.istockphoto.com/photos/woman-turning-on-air-conditioner-picture-id1325708905" alt=""></div>
+              <!-- <div class="img img14"><img src="https://media.istockphoto.com/photos/woman-turning-on-air-conditioner-picture-id1325708905" alt=""></div>
               <div class="name">AIR CONDITIONER</div>
               <div class="price">$78</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img15"><img src="https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+              <!-- <div class="img img15"><img src="https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
               <div class="name">BOOK</div>
               <div class="price">$9</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img1"><img src="https://images.pexels.com/photos/4339598/pexels-photo-4339598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+              <!-- <div class="img img1"><img src="https://images.pexels.com/photos/4339598/pexels-photo-4339598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
               <div class="name">BAG</div>
               <div class="price">$36.5</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img1"><img src="https://media.istockphoto.com/photos/hand-of-a-lady-selecting-yellow-colored-saree-in-a-shop-picture-id1301740530" alt=""></div>
+              <!-- <div class="img img1"><img src="https://media.istockphoto.com/photos/hand-of-a-lady-selecting-yellow-colored-saree-in-a-shop-picture-id1301740530" alt=""></div>
               <div class="name">SAREES</div>
               <div class="price">$25.6</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
             <div class="items">
-              <div class="img img1"><img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+              <!-- <div class="img img1"><img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
               <div class="name">WASHING MACHINE</div>
               <div class="price">$56</div>
               <div class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
               <div class="btnpay">
                 <button class="btnbuy">buy now</button>
                 <button class="btnaddcar">add cart</button>
-              </div>
+              </div> -->
             </div>
           </div>
   
         </div>
       </div>
   
+    </section>
+    <section class="signin-product">
+      <div class="product-container">
+        <div class="product-top">
+          <p>home</p><span>&#10230;</span><p>tên sản phẩm</p>
+        </div>
+        <div class="product-content">
+          <div class="product-contentLeft">
+            <div class="product-contentLeft-bigImg">
+              <img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+  
+            </div>
+            <div class="product-contentLeft-smallImg">
+              <img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+              <img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+              <img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+              <img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            </div>
+          </div>
+          <div class="product-contentRight">
+            <div class="product-contentRight-productName">
+              <h3>ten san pham</h3>
+              <p>MSP: #15151</p>
+  
+            </div>
+            <div class="product-contentRight-productPrice">
+              <p>99$</p>
+            </div>
+            <div class="product-contentRight-productDetail">
+              <p>ghi thong tin san pham o day</p>
+            </div>
+            <div class="product-contentRight-productButton">
+              <button><i class="fa-sharp fa-solid fa-money-bill"></i><p>Mua ngay</p></button>
+              <button ><i class="cart-icon fa-solid fa-cart-shopping"></i><p>them vao gio hang</p></button>
+            </div>
+            
+  
+          </div>
+        </div>
+      </div>
+      <div class="policy">
+        <h3>shop cam kết về sản phẩm:</h3>
+        <p>1. Sản phẩm giống mô tả và hình ảnh thật 100% của Shop giữ bản. quyền hình ảnh. <br />
+          2. Đảm bảo vải chất lượng sản phẩm 100%. <br/>  
+          3. Sản phẩm được kiểm tra cẩn thận khi gói hàng giao cho Quý Khách. <br />
+          4. Hoàn tiền nếu sản phẩm không giống với mô tả.</p>
+      </div>
     </section>
     <footer class="footer">
       <div id="footer" class="footer0 footer-text">
@@ -379,6 +432,7 @@
     <script src="./js/detail.js"></script>
     <script src="./js/search.js"></script>
     <script src="./js/sort.js"></script>
+    <script src="./js/product.js"></script>
     <script> 
     //giao dien dang nhap dk
       var closlog = document.querySelector(".wapper .wapper-heading .closelog")
@@ -405,7 +459,10 @@
           modal_login.classList.toggle("login")
       })
     </script>
-
+  
   </body>
   
   </html>
+  
+
+</html>

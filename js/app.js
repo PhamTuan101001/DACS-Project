@@ -7,7 +7,7 @@ async function getapishop() {
 }
 getapishop().then(data =>{
   const items = document.getElementsByClassName("items")
-  for(var i=0; i< 18 ;i++){
+  for(var i=0; i< data.length ;i++){
     items[i].innerHTML=`
               <div class="img id=${data[i].id}"><img class="product-img" src="${data[i].image}" alt=""></div>
               <div class="name">${data[i].category}</div>
