@@ -504,7 +504,7 @@ header a ion-icon {
 
 .section2 .container .items {
   position: relative;
-  margin: 10px;
+  margin:10px 70px;
   width: 200px;
   height: 300px;
   background-color: white;
@@ -583,7 +583,27 @@ header a ion-icon {
   transition-duration: 0.8s;
   border-radius: 12px;
 }
-
+/* phan trang */
+.listpage{
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+}
+.listpage li{
+  border: 2px solid #223671;
+  padding: 20px;
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.listpage .active{
+  background-color: #F26526;
+}
+.listpage li:hover{
+  border: 2px solid #F26526;
+}
+/* end phan trang */
 .option {
   background: #fff;
 }
