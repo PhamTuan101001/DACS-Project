@@ -955,3 +955,156 @@ footer {
     flex-wrap: nowrap;
   }
 }
+
+.items button {
+  border: none;
+}
+
+/* .section_product {
+  display: none;
+} */
+
+/* ------------signin product */
+
+
+.signin-product {
+  padding: 60px;
+  display: none;
+
+}
+
+.product-img {
+  cursor: pointer;
+}
+
+.product-top {
+  margin: 3px 0;
+  display: flex;
+  opacity: 0.7;
+
+}
+
+.product-top p {
+  font-size: 12px;
+  margin: 0 12px;
+}
+
+.product-content {
+  display: flex;
+  height: 750px;
+}
+
+.product-contentLeft {
+  width: 50%;
+}
+
+.product-contentRight {
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+
+}
+
+.product-contentLeft-bigImg {
+  width: 80%;
+
+  padding-bottom: 20px;
+  padding: 2px;
+  border: #223671 1px solid;
+  box-sizing: border-box;
+}
+
+.product-contentLeft-smallImg {
+  width: 20%;
+  display: flex;
+
+
+
+
+}
+
+.product-contentLeft-smallImg img {
+  width: 100%;
+  /* height: 75%; */
+  border: #223671 1px solid;
+  padding: 5px;
+  box-sizing: border-box;
+  width: calc(100% - 3px);
+
+}
+
+.product-contentLeft-bigImg img {
+  width: 100%;
+  /* height: 75%; */
+  padding: 10px;
+  box-sizing: border-box;
+  border: #223671 1px solid;
+
+
+}
+
+
+
+.product-contentRight-productName {
+  line-height: 15px;
+}
+
+.product-contentRight-productName h3 {
+  font-size: 24px;
+  color: #F26526;
+}
+
+.product-contentRight-productName p {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.product-contentRight-productPrice {
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+
+.product-contentRight-productButton {
+  padding: 24px 0;
+
+
+}
+
+.product-contentRight-productButton button {
+  min-width: 110px;
+  height: 45px;
+  background-color: #F26526;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+
+}
+
+.product-contentRight-productButton button:last-child {
+  margin-left: 8px;
+}
+
+.product-contentRight-productButton button:hover {
+  background-color: #223671;
+
+}
+
+
+
+.product-contentRight-productDetail {
+  height: 250px;
+  background-color: rgba(34, 54, 113, 0.5);
+  font-size: 14px;
+  border-radius: 5px;
+
+
+}
+
+.policy {
+  padding-top: 20px;
+}
