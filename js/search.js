@@ -1,18 +1,28 @@
 var btnsearch = document.querySelector(".s");
 var opensearch = document.querySelector(".search-input");
 var searchbox = document.querySelector(".search-content");
-
+var closesearch = document.querySelector(".close-search");
 btnsearch.addEventListener("click", () => {
     if(opensearch.value == ''){
+      closesearch.classList.remove("active");
       searchbox.classList.remove("active");
       removesearch()
+      opensearch.value=null;
     }else{
       removesearch()
       searchtitle();
     }  
   });
 
+  closesearch.addEventListener("click", () => {
+    closesearch.classList.remove("active");
+    searchbox.classList.remove("active");
+      removesearch()
+      opensearch.value=null;
+    });
+
 opensearch.addEventListener("click", () => {
+  closesearch.classList.add("active");
     searchbox.classList.add("active");
   });
 function searchtitle(){//so sanh

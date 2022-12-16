@@ -23,12 +23,7 @@ closecart.addEventListener("click", () => {
     cart.classList.remove("active");
     history.classList.remove("active");
   });
-//
-if(document.readyState == 'loading'){
-  document.addEventListener('DOMContentLoaded',ready)
-} else{
-  ready();
-}
+  ready()
 
 function ready(){
   var removecartbutton = document.getElementsByClassName('cart-remove')

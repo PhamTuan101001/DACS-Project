@@ -1,5 +1,5 @@
 let thispage = 1;
-let limit = 5;
+let limit = 10;
 let list = document.querySelectorAll('.container .items');
 loaditem()
 function loaditem(){

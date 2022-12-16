@@ -273,7 +273,20 @@ header .cartfon .cart.active {
 .btn-history:hover {
   background-color: #223671;
 }
-
+.close-search{
+  position: absolute;
+  top:-100vh;
+  left: -2.6rem;
+  font-size: 2rem;
+  padding:5px 10px;
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+  transition: 0.3s;
+}
+.close-search.active{
+  top: 2.1rem;
+}
 #close-history,
 #close-cart {
   position: absolute;
@@ -504,7 +517,7 @@ header a ion-icon {
 
 .section2 .container .items {
   position: relative;
-  margin: 10px;
+  margin: 10px 30px;
   width: 200px;
   height: 300px;
   background-color: white;
@@ -583,6 +596,28 @@ header a ion-icon {
   transition-duration: 0.8s;
   border-radius: 12px;
 }
+
+/* phan trang */
+.listpage{
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+}
+.listpage li{
+  border: 2px solid #223671;
+  padding: 20px;
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.listpage .active{
+  background-color: #F26526;
+}
+.listpage li:hover{
+  border: 2px solid #F26526;
+}
+/* end phan trang */
 
 .option {
   background: #fff;
